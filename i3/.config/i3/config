@@ -95,13 +95,13 @@ exec_always xrandr --output HDMI-0 --primary --mode 1920x1080 --rate 74.97 --out
 exec_always blueman-applet
 
 # Launch discord for communicating
-exec discord
+#exec discord
 
 # Launch flameshot as a screenshot utility
-exec flameshot
+#exec flameshot
 
 # Launch Steam-native for games
-exec steam-native
+#exec steam-native
 
 # Launch i3status-rs for bar
 bar {
