@@ -3,4 +3,4 @@ Necessary programs are : superpaper, feh, i3status-rust-git, i3lock-fancy-dualmo
 Necessary fonts are : Ubuntu 12, FontAwesome5
 I will work on an automated install script with selectable laptop/desktop configs
 
-[/assets/desktop.png]
+[assets/desktop.png]
