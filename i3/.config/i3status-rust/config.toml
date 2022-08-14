@@ -7,21 +7,6 @@ max_width = 10
 show_marks = "visible"
 
 [[block]]
-block = "kdeconnect"
-format = "{bat_charge}"
-format_disconnected = "{bat_charge}"
-
-[[block]]
-block = "disk_space"
-path = "/"
-info_type = "available"
-unit = "GB"
-interval = 20
-warning = 20.0
-alert = 10.0
-format = "{icon}{percentage}"
-
-[[block]]
 block = "memory"
 display_type = "memory"
 format_mem = "{mem_used_percents}"
@@ -30,7 +15,6 @@ format_swap = "{swap_used_percents}"
 [[block]]
 block = "cpu"
 interval = 1
-format = "{utilization}"
 
 [[block]]
 block = "temperature"
@@ -38,18 +22,10 @@ collapsed = false
 interval = 10
 format = "{average} avg"
 chip = "*-isa-*"
-inputs = ["CPUTIN", "SYSTIN"]
-
-[[block]]
-block = "nvidia_gpu"
-label = "GPU"
-show_memory = false
-show_clocks = false
-interval = 1
 
 [[block]]
 block = "sound"
-format = "{volume}"
+step_width = 5
 
 [[block]]
 block = "music"
@@ -59,19 +35,7 @@ on_collapsed_click = "LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
 max_width = 10
 
 [[block]]
-block = "custom"
-cycle = ["echo ON", "echo OFF"]
-on_click = "~/picom-toggle.sh"
-interval = 1
-
-[[block]]
-block = "networkmanager"
-on_click = "alacritty -e nmtui"
-interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+", "192.168.122.1"]
-interface_name_include = []
-primary_only = true
-
-[[block]]
 block = "time"
 interval = 5
+locale = "en_IE"
 format = "%a %d/%m %R"
